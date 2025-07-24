@@ -1,13 +1,12 @@
-// src/App.jsx
+import React from 'react';
 import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
   return (
-    <>
+    <div style={{ backgroundColor: '#0f0f0f', minHeight: '100vh' }}>
       <Navbar />
-      <h1 style={{ color: 'white', padding: '20px' }}>Hello Farhan!</h1>
-    </>
+    </div>
   );
-}
+};
 
 export default App;
