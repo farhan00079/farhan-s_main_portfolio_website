@@ -12,9 +12,10 @@ function Navbar() {
         <ul className="nav-links">
           <li className="active"><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
+          <li><a href="#">About Me</a></li>
           <li><a href="#">My Projects</a></li>
           <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact Me</a></li>
         </ul>
 
         <button className="contact-btn">Contact</button>
