@@ -1,49 +1,53 @@
-import React from 'react';
-import './Project.css';
+import React from "react";
+import "./Project.css";
 
 const projects = [
   {
-    title: 'Smart AI Interview Trainer',
-    description: 'Creating an AI-powered job readiness tool with realistic interview simulations.',
-    tag: 'AI Project',
-    image: '/images/ai-trainer.png'
+    title: "Amaksora App",
+    type: "App Design",
+    description:
+      "Creating intuitive and visually appealing designs that enhance user experience.",
+    image: "https://via.placeholder.com/300x200", // Replace with real image
   },
   {
-    title: 'Recipe Generator Bot',
-    description: 'Built with Rasa and Python, this bot generates custom recipes based on ingredients.',
-    tag: 'Python Project',
-    image: '/images/recipe-bot.png'
+    title: "Homy App",
+    type: "App Design",
+    description:
+      "Creating intuitive and visually appealing designs that enhance user experience.",
+    image: "https://via.placeholder.com/300x200",
   },
   {
-    title: 'MERN Portfolio Website',
-    description: 'A responsive and animated personal portfolio website using the MERN stack.',
-    tag: 'Web Design',
-    image: '/images/portfolio-site.png'
+    title: "B-Roll Media",
+    type: "Web Design",
+    description:
+      "Designing intuitive and visually engaging websites that elevate user experience.",
+    image: "https://via.placeholder.com/300x200",
   },
-  {
-    title: 'Snake Game in Java',
-    description: 'A fun classic snake game built using Java Swing.',
-    tag: 'Java Game',
-    image: '/images/snake-game.png'
-  }
 ];
 
 const Projects = () => {
   return (
-    <section className="projects" id="projects">
-      <h2 className="projects-title">My Projects</h2>
-      <p className="projects-subtitle">
-        Discover the projects that showcase my passion for design and development.
+    <section className="projects-section" id="projects">
+      <h2 className="section-title">My Projects</h2>
+      <p className="section-subtitle">
+        Discover the projects that showcase my passion for design and innovation
       </p>
+
       <div className="projects-container">
-        {projects.map((project, index) => (
+        {projects.map((proj, index) => (
           <div className="project-card" key={index}>
-            <img src={project.image} alt={project.title} className="project-image" />
-            <h3 className="project-title">{project.title}</h3>
-            <p className="project-description">{project.description}</p>
-            <span className="project-tag">{project.tag}</span>
+            <img src={proj.image} alt={proj.title} />
+            <div className="project-info">
+              <h3>{proj.title}</h3>
+              <span className="project-type">{proj.type}</span>
+              <p>{proj.description}</p>
+            </div>
           </div>
         ))}
+      </div>
+
+      <div className="see-all-container">
+        <button className="see-all-btn">See All</button>
       </div>
     </section>
   );

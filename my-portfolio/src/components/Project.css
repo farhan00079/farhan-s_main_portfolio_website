@@ -1,72 +1,92 @@
-.projects {
+.projects-section {
   padding: 4rem 2rem;
-  background: linear-gradient(180deg, #0d011d, #1a0631);
-  color: #fff;
+  background: #0f011d;
+  color: white;
   text-align: center;
 }
 
-.projects-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #fff;
+.section-title {
+  font-size: 2.5rem;
   font-weight: bold;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
 }
 
-.projects-subtitle {
-  font-size: 1.2rem;
+.section-subtitle {
+  color: #aaa;
   margin-bottom: 3rem;
-  color: #c5b3e6;
+  font-size: 1rem;
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #8a3ffc20;
-  backdrop-filter: blur(15px);
-  border-radius: 20px;
-  padding: 1.5rem;
-  max-width: 300px;
-  text-align: left;
-  position: relative;
-  box-shadow: 0 0 20px #a855f7aa;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: #1a0634;
+  border-radius: 16px;
+  min-width: 300px;
+  flex: 0 0 auto;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  border: 2px solid #4a00e0;
+  box-shadow: 0 0 20px #b800e6;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 30px #d946ef;
+  box-shadow: 0 0 25px #ff00ff;
 }
 
-.project-image {
+.project-card img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 12px;
   margin-bottom: 1rem;
 }
 
-.project-title {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #ffffff;
+.project-info h3 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
-.project-description {
-  font-size: 1rem;
-  color: #d1c2f0;
-  margin-bottom: 1rem;
-}
-
-.project-tag {
-  display: inline-block;
-  background: #9333ea;
-  padding: 0.4rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.8rem;
+.project-type {
+  background: #6829c2;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
   color: white;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.see-all-container {
+  margin-top: 2rem;
+}
+
+.see-all-btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #ff00ff, #00ffff);
+  box-shadow: 0 0 15px #ff00ff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.see-all-btn:hover {
+  transform: scale(1.05);
 }

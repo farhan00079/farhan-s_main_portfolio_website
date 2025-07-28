@@ -41,6 +41,23 @@ const Services = () => {
             Deploying and managing web applications with CI/CD tools and cloud services like Vercel.
           </p>
         </div>
+
+        <div className="service-card">
+          <div className="service-icon">🚀</div>
+          <h3 className="service-title">Project Deployment</h3>
+          <p className="service-description">
+            Deploying and managing web applications with CI/CD tools and cloud services like Vercel.
+          </p>
+        </div>
+
+        <div className="service-card">
+          <div className="service-icon">🚀</div>
+          <h3 className="service-title">Project Deployment</h3>
+          <p className="service-description">
+            Deploying and managing web applications with CI/CD tools and cloud services like Vercel.
+          </p>
+        </div>
+        
       </div>
     </section>
   );

@@ -13,6 +13,7 @@ const App = () => {
       <AboutMe />
       <Service />
       <Project />
+      
     </div>
   );
 };
