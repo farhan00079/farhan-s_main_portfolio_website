@@ -6,7 +6,8 @@ import Service from './components/Service';
 import Project from './components/Project';
 import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
-// import ThanksPage from './components/ThanksPage';
+import ThanksPage from './components/ThanksPage';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       <Project />
       <Testimonial />
       <Contact />
-      {/* <ThanksPage /> */}
+      <ThanksPage />
+      <Footer />
     </div>
   );
 };
