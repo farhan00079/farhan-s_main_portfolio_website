@@ -5,6 +5,8 @@ import AboutMe from './components/AboutMe';
 import Service from './components/Service';
 import Project from './components/Project';
 import Testimonial from './components/Testimonial';
+import Contact from './components/Contact';
+// import ThanksPage from './components/ThanksPage';
 
 const App = () => {
   return (
@@ -15,7 +17,8 @@ const App = () => {
       <Service />
       <Project />
       <Testimonial />
-      
+      <Contact />
+      {/* <ThanksPage /> */}
     </div>
   );
 };

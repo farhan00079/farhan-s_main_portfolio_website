@@ -1,0 +1,139 @@
+.contact {
+  background: #0a0a0d;
+  padding: 100px 10%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon Glow Background */
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,0,255,0.4), transparent 70%);
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(255,255,0,0.3), transparent 70%);
+  bottom: -100px;
+  right: -100px;
+  z-index: 0;
+}
+
+/* Section Title */
+/* .contact-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #ff00ff;
+  margin-bottom: 1.5rem;
+} */
+
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #ff00ff;
+  margin-bottom: 1.5rem;
+  text-align: center; /* Ye text ko center me karega */
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-left h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #ffcc00, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.7;
+  max-width: 400px;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #ffcc00;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #111;
+  color: #fff;
+  border: 1px solid rgba(255, 0, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 1px solid #ff00ff;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+}
+
+/* Neon Button */
+.neon-btn {
+  background: linear-gradient(90deg, #ff00ff, #ff0099);
+  border: none;
+  padding: 14px 20px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255,0,255,0.6);
+  transition: 0.3s;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 0 30px rgba(255,0,255,0.9), 0 0 60px rgba(255,0,255,0.7);
+  transform: scale(1.05);
+}

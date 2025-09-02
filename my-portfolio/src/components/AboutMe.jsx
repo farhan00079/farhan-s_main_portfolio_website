@@ -4,7 +4,7 @@ import avatar from '../assets/avatar.jpg'; // Replace with your illustrated avat
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about"> {/* ✅ id must match Navbar */}
       <div className="about-card">
         <div className="about-left">
           <div className="avatar-glow">

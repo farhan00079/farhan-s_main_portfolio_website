@@ -1,12 +1,20 @@
-// src/components/Hero.jsx
 import React from 'react';
 import './Hero.css';
 import profileImg from '../assets/profile1.jpg'; // Make sure the image exists
 
 const Hero = () => {
+
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             <div className="hero-left">
+
                 <p className="intro">WELCOME TO MY WORLD ✨</p>
                 <h1 className="hero-intro">
                     <span style={{ color: 'white' }}>Hii,</span>
@@ -18,12 +26,20 @@ const Hero = () => {
                 <p className="description">
                     Skilled in building end-to-end web applications using React.js, Node.js, MongoDB, and Express.js. I turn ideas into fast, responsive, and scalable solutions with clean code and creative thinking. Currently working at Tech Mahindra, solving real-world problems through tech. Let’s create something impactful!
                 </p>
+
                 <div className="hero-buttons">
-                    <button className="btn download-btn">My Projects</button>
+                    <button 
+                        className="btn download-btn" 
+                        onClick={() => handleScroll('projects')} // ✅ Smooth scroll to My Projects
+                    >
+                        My Projects
+                    </button>
+
                     <a href="/FarhanCV.pdf" download className="btn download-btn">
                         Download CV
                     </a>
                 </div>
+
                 <div className="social-icons">
                     <a href="https://github.com/farhan00079" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github"></i>

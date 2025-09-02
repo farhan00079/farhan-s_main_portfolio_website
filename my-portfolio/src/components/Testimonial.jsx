@@ -35,7 +35,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="testimonial-container">
+    <section className="testimonial-container" id="reviews"> {/* ✅ id for smooth scroll */}
       <h2 className="testimonial-title">Testimonials</h2>
       <div className="testimonial-wrapper">
         {testimonials.map((t, index) => (
@@ -67,7 +67,7 @@ const Testimonial = () => {
         </div>
         <button onClick={nextSlide} className="nav-btn">&rarr;</button>
       </div>
-    </div>
+    </section>
   );
 };
 

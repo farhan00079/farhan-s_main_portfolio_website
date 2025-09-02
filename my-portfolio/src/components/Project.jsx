@@ -31,14 +31,14 @@ const Project = () => {
   ];
 
   return (
-    <section className="project-section">
+    <section className="project-section" id="projects"> {/* ✅ Add id for smooth scroll */}
       <h2 className="section-title">Projects</h2>
       <p className="section-subtitle">Some of my works built with love 💖</p>
 
       <div className="project-slider">
         {projectData.map((project, index) => (
           <div className="project-card" key={index}>
-            <img src={project.image} alt="project" className="project-image" />
+            <img src={project.image} alt={project.title} className="project-image" />
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
           </div>
