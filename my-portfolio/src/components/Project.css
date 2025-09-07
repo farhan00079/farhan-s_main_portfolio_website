@@ -89,3 +89,64 @@
   color: #ccc;
   line-height: 1.4;
 }
+
+/* 🔹 Responsive Styles */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
+  .project-card {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  .project-card {
+    width: 240px;
+    padding: 1.5rem;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+  .project-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-section {
+    padding: 3rem 1.5rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .project-slider {
+    gap: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .project-card {
+    width: 90%;
+    min-height: 250px;
+    padding: 1.2rem;
+  }
+  .project-image {
+    height: 140px;
+  }
+  .project-title {
+    font-size: 1rem;
+  }
+  .project-description {
+    font-size: 0.85rem;
+  }
+}

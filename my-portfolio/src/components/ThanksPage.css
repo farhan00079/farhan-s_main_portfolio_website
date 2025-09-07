@@ -2,7 +2,7 @@
 .thanks-container {
   position: relative;
   min-height: 100vh;
-  background: #0a0a0a;
+  background: #0a0a0a; /* dark black */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,34 +16,27 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.5;
+  opacity: 0.3; /* reduce visibility */
 }
 
+/* Only keep subtle pink circles */
 .circle-1 {
   width: 300px; height: 300px;
-  background: #ff00ff;
+  background: #ff99cc; /* subtle pink */
   top: 10%; left: 5%;
 }
-.circle-2 {
-  width: 400px; height: 400px;
-  background: #ff0077;
-  bottom: 15%; right: 10%;
-}
-.circle-3 {
-  width: 250px; height: 250px;
-  background: #ffaa00;
-  bottom: 30%; left: 20%;
-}
+/* Removed red/orange circles */
+/* .circle-2, .circle-3 removed */
 
 /* Card */
 .thanks-card {
-  background: rgba(20, 20, 20, 0.9);
+  background: rgba(20, 20, 20, 0.95);
   border-radius: 1.5rem;
   padding: 3rem;
   max-width: 600px;
   text-align: center;
-  box-shadow: 0 0 calc(20px * var(--glow-intensity)) #ff00ff,
-              0 0 calc(40px * var(--glow-intensity)) #ff0077;
+  box-shadow: 0 0 calc(15px * var(--glow-intensity)) #ff99cc,
+              0 0 calc(30px * var(--glow-intensity)) #ff6699;
   transition: 0.3s ease;
 }
 
@@ -57,7 +50,7 @@
   color: #ffcc00;
 }
 .highlight-pink {
-  color: #ff33cc;
+  color: #ff6699; /* subtle pink */
 }
 
 /* Text */
@@ -80,16 +73,18 @@
   transition: all 0.3s ease;
 }
 
+/* Get in Touch button pink */
 .btn-primary {
-  background: #ff33cc;
+  background: #ff6699; 
   color: #fff;
-  box-shadow: 0 0 20px #ff33cc, 0 0 40px #ff0077;
+  box-shadow: 0 0 15px #ff6699, 0 0 30px #ff6699;
 }
 
+/* Optional other button (if needed) */
 .btn-secondary {
-  background: #ffaa00;
-  color: #000;
-  box-shadow: 0 0 20px #ffaa00, 0 0 40px #ff8800;
+  background: #333; /* dark secondary button */
+  color: #fff;
+  box-shadow: 0 0 10px #555;
 }
 
 .btn-glow:hover {
@@ -105,5 +100,5 @@
 .signature-name {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #ff33cc;
+  color: #ff6699; /* subtle pink */
 }

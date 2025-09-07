@@ -1,34 +1,18 @@
 /* Animations */
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 8px #e70faa;
-  }
-  50% {
-    box-shadow: 0 0 16px #e70faa;
-  }
-  100% {
-    box-shadow: 0 0 8px #e70faa;
-  }
+  0% { box-shadow: 0 0 8px #e70faa; }
+  50% { box-shadow: 0 0 16px #e70faa; }
+  100% { box-shadow: 0 0 8px #e70faa; }
 }
 
 @keyframes pulseLogo {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.08);
-  }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
 }
 
 /* Navbar Container */
@@ -37,6 +21,8 @@
   display: flex;
   justify-content: center;
   animation: fadeInDown 1s ease forwards;
+  position: relative;
+  z-index: 1000;
 }
 
 /* Navbar Style */
@@ -49,10 +35,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 30px;
-  max-width: 900px;
+  max-width: 1100px;
   width: 100%;
   box-shadow: 0 0 25px rgba(255, 0, 255, 0.15);
   animation: fadeInDown 1s ease forwards;
+  position: relative;
 }
 
 /* Logo */
@@ -78,17 +65,8 @@
   gap: 25px;
   margin: 0;
   padding: 0;
+  transition: all 0.4s ease-in-out;
 }
-
-.nav-links li {
-  opacity: 0;
-  animation: fadeInDown 0.8s ease forwards;
-}
-
-.nav-links li:nth-child(1) { animation-delay: 0.3s; }
-.nav-links li:nth-child(2) { animation-delay: 0.4s; }
-.nav-links li:nth-child(3) { animation-delay: 0.5s; }
-.nav-links li:nth-child(4) { animation-delay: 0.6s; }
 
 .nav-links li a {
   text-decoration: none;
@@ -112,22 +90,10 @@
   border-radius: 10px;
 }
 
-.nav-links li a:hover::after {
-  width: 100%;
-}
-
-.nav-links li a:hover {
-  color: #e70faa;
-  text-shadow: 0 0 5px #e70faa;
-}
-
-.nav-links li.active a {
-  color: #e70faa;
-}
-
-.nav-links li.active a::after {
-  width: 100%;
-}
+.nav-links li a:hover::after { width: 100%; }
+.nav-links li a:hover { color: #e70faa; text-shadow: 0 0 5px #e70faa; }
+.nav-links li.active a { color: #e70faa; }
+.nav-links li.active a::after { width: 100%; }
 
 /* Contact Button */
 .contact-btn {
@@ -142,8 +108,68 @@
   animation: glowPulse 2s infinite;
   transition: transform 0.2s ease;
 }
-
 .contact-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 0 12px #e70faa, 0 0 20px #e70faa;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #e70faa; /* 👈 Starting se Neon Pink */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px #e70faa; /* Thoda subtle glow by default */
+}
+
+/* Hover Effect - Strong Glow */
+.hamburger:hover span {
+  box-shadow: 0 0 10px #e70faa, 0 0 20px #7b2cbf;
+  transform: scale(1.1);
+}
+
+/* Active (X shape banne pe bhi neon hi rahe) */
+.hamburger.active span {
+  background: #e70faa !important;
+  box-shadow: 0 0 12px #e70faa, 0 0 25px #7b2cbf;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) { 
+  opacity: 0; 
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(15, 15, 30, 0.95);
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(231, 15, 170, 0.4);
+  }
+  .nav-links.open { right: 20px; }
+  .contact-btn { display: none; }
+  .hamburger { display: flex; }
 }

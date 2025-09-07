@@ -116,7 +116,7 @@
 .input-group input:focus,
 .input-group textarea:focus {
   border: 1px solid #ff00ff;
-  box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+  box-shadow: 0 0 15px #ff00ffb3;
 }
 
 /* Neon Button */

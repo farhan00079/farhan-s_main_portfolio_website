@@ -1,22 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false); // close menu after click
     }
   };
 
   return (
     <div className="navbar-container">
       <nav className="navbar">
+        {/* Logo */}
         <div className="logo">
           <span>F</span>
         </div>
 
-        <ul className="nav-links">
+        {/* Hamburger Button */}
+        <div
+          className={`hamburger ${isOpen ? "active" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* Nav Links */}
+        <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li>
             <a href="#home" onClick={(e) => { e.preventDefault(); handleScroll("home"); }}>Home</a>
           </li>
@@ -37,7 +52,10 @@ function Navbar() {
           </li>
         </ul>
 
-        <button className="contact-btn" onClick={() => handleScroll("contact")}>Contact</button>
+        {/* Contact Button (hidden on mobile) */}
+        <button className="contact-btn" onClick={() => handleScroll("contact")}>
+          Contact
+        </button>
       </nav>
     </div>
   );

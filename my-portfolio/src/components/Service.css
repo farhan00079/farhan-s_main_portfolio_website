@@ -56,3 +56,44 @@
   color: #ccc;
   line-height: 1.4;
 }
+
+/* 🔹 Responsive Styles */
+@media (max-width: 1024px) {
+  .services-container {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+  .service-card {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  .service-title {
+    font-size: 1.1rem;
+  }
+  .service-description {
+    font-size: 0.9rem;
+  }
+}
