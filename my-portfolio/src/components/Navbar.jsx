@@ -42,10 +42,10 @@ function Navbar() {
             <a href="#services" onClick={(e) => { e.preventDefault(); handleScroll("services"); }}>Services</a>
           </li>
           <li>
-            <a href="#projects" onClick={(e) => { e.preventDefault(); handleScroll("projects"); }}>My Projects</a>
+            <a href="#projects" onClick={(e) => { e.preventDefault(); handleScroll("projects"); }}>Projects</a>
           </li>
           <li>
-            <a href="#reviews" onClick={(e) => { e.preventDefault(); handleScroll("reviews"); }}>Reviews</a>
+            <a href="#reviews" onClick={(e) => { e.preventDefault(); handleScroll("reviews"); }}>Testimonials</a>
           </li>
           <li>
             <a href="#contact" onClick={(e) => { e.preventDefault(); handleScroll("contact"); }}>Contact</a>

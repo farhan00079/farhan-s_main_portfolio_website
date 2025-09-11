@@ -14,8 +14,8 @@ const About = () => {
         <div className="about-right">
           <h2 className="section-title">About Me</h2>
           <p className="about-text">
-            Hello! I'm <strong>Farhan Alam</strong>, a passionate <strong>Full Stack Developer</strong>
-            currently working at <strong>Tech Mahindra</strong>. I love building user-centric web apps
+            Hello! I'm <strong>Farhan Alam</strong>, a passionate <strong>Full Stack Developer </strong>
+             currently working at <strong>Tech Mahindra</strong>. I love building user-centric web apps
             with clean UI and efficient backend architecture.
             <br /><br />
             I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React.js, Node.js),
