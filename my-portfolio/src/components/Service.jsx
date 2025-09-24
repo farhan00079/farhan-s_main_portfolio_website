@@ -33,17 +33,11 @@ const Services = () => {
 Crafting visually appealing and user-centric mobile and web app designs that combine modern aesthetics with seamless usability.          </p>
         </div>
 
-        <div className="service-card">
-          <div className="service-icon">🚀</div>
-          <h3 className="service-title">Project Deployment</h3>
-          <p className="service-description">
-            Deploying and managing web applications with CI/CD tools and cloud services like Vercel.
-          </p>
-        </div>
+       
 
         <div className="service-card">
           <div className="service-icon">
-🖥️</div>
+🌐</div>
           <h3 className="service-title">Responsive Web Design</h3>
           <p className="service-description">
 Building mobile-friendly and cross-platform websites that work seamlessly on all devices.          </p>
@@ -56,6 +50,13 @@ Building mobile-friendly and cross-platform websites that work seamlessly on all
 Integrating RESTful APIs and managing databases (MongoDB, MySQL) for smooth data flow and performance.          </p>
         </div>
         
+         <div className="service-card">
+          <div className="service-icon">🚀</div>
+          <h3 className="service-title">Project Deployment</h3>
+          <p className="service-description">
+            Deploying and managing web applications with CI/CD tools and cloud services like Vercel.
+          </p>
+        </div>
       </div>
     </section>
   );

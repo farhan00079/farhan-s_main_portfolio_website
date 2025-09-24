@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   border-top: 2px solid #ff33cc;
-  box-shadow: 0 -4px 20px rgba(255, 0, 150, 0.5);
+  box-shadow: 0 -3px 10px rgba(255, 0, 150, 0.2); /* subtle */
 }
 
 /* Grid Layout */
@@ -22,7 +22,7 @@
   font-size: 2rem;
   font-weight: bold;
   color: #ffcc00;
-  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+  text-shadow: 0 0 2px #ffcc00; /* very subtle */
 }
 
 .footer-tagline {
@@ -38,7 +38,7 @@
   font-weight: 600;
   margin-bottom: 1rem;
   color: #ff33cc;
-  text-shadow: 0 0 8px #ff33cc, 0 0 20px #ff33cc;
+  text-shadow: 0 0 2px #ff33cc; /* very subtle */
 }
 
 /* Links */
@@ -59,7 +59,7 @@
 
 .footer-section ul li a:hover {
   color: #ffcc00;
-  text-shadow: 0 0 8px #ffcc00, 0 0 15px #ffaa00;
+  text-shadow: 0 0 2px #ffcc00; /* subtle glow on hover */
 }
 
 /* Social Icons */
@@ -75,14 +75,14 @@
   padding: 10px;
   border-radius: 50%;
   transition: 0.3s;
-  box-shadow: 0 0 10px #ff33cc;
+  box-shadow: 0 0 3px #ff33cc; /* subtle */
 }
 
 .social-icon:hover {
   background: #ff33cc;
   color: #fff;
-  box-shadow: 0 0 15px #ff33cc, 0 0 30px #ff0077;
-  transform: scale(1.1);
+  box-shadow: 0 0 6px #ff33cc, 0 0 12px #ff0077; /* toned down hover */
+  transform: scale(1.05);
 }
 
 /* Contact Info */
@@ -97,7 +97,7 @@
 
 /* Bottom Bar */
 .footer-bottom {
-  border-top: 1px solid rgba(255, 51, 204, 0.3);
+  border-top: 1px solid rgba(255, 51, 204, 0.15); /* lighter */
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@
 
 .footer-bottom .highlight {
   color: #ff33cc;
-  text-shadow: 0 0 10px #ff33cc;
+  text-shadow: 0 0 2px #ff33cc; /* subtle */
 }
 
 .legal-links {
@@ -125,5 +125,5 @@
 
 .legal-links a:hover {
   color: #ffcc00;
-  text-shadow: 0 0 8px #ffcc00;
+  text-shadow: 0 0 2px #ffcc00; /* subtle */
 }

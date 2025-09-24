@@ -4,22 +4,24 @@ import img1 from "../assets/user1.jpg"; // Add your image in /assets folder
 
 const testimonials = [
   {
-    text: "Sara did an amazing job designing a user-friendly and intuitive experience for our project. Her attention to detail and creativity made a huge difference!",
-    name: "Huda Samer",
-    role: "CEO",
+    text: "Farhan did an amazing job designing a user-friendly and intuitive experience for our project. Her attention to detail and creativity made a huge difference!",
+    name: "Varun",
+    role: "Manager Tech M",
     image: "https://assets.aboutamazon.com/dims4/default/ed553e7/2147483647/strip/false/crop/4108x2304+0+0/resize/1486x833!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F36%2F59%2Feba4adcc4f88a972b5639ed1dde0%2Fadobestock-712831308.jpeg",
   },
   {
     text: "Farhan is an exceptional developer with a futuristic design mindset. Our collaboration was smooth, and the results were beyond expectations.",
-    name: "Rahul Mehta",
-    role: "CTO",
-    image: img1,
+    name: "Rahul",
+    role: "CEO",
+    image: "https://magazine.alumni.ubc.ca/sites/default/files/styles/max_1300x1300/public/2023-09/AIart-1920x1080.jpg?itok=i4Yw51WT",
+
   },
   {
     text: "Creative, dedicated, and skilled! Loved working with him. Would definitely recommend for modern UI projects.",
-    name: "Aisha Khan",
-    role: "Product Manager",
-    image: img1,
+    name: "Rohini",
+    role: "HR in Tech M",
+    image: "https://img.freepik.com/premium-photo/ai-human-technology-background_1409-5588.jpg",
+
   },
 ];
 

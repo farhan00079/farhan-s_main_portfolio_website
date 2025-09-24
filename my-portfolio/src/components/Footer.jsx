@@ -15,16 +15,16 @@ const Footer = () => {
             Full-Stack Developer creating impactful digital experiences with cutting-edge technology.
           </p>
           <div className="social-links">
-            <a href="#" aria-label="LinkedIn" className="social-icon">
+            <a href="https://www.linkedin.com/in/farhan-alam-35972922b/" aria-label="LinkedIn" className="social-icon" target="_blank"
+  rel="noopener noreferrer">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" aria-label="GitHub" className="social-icon">
+            <a href="https://github.com/farhan00079" aria-label="GitHub" className="social-icon" target="_blank"
+  rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="#" aria-label="Twitter" className="social-icon">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" aria-label="Instagram" className="social-icon">
+            <a href="https://www.instagram.com/farhan_____alam/" aria-label="Instagram" className="social-icon"target="_blank"
+  rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
@@ -49,7 +49,6 @@ const Footer = () => {
             <li><a href="#">Web Development</a></li>
             <li><a href="#">App Development</a></li>
             <li><a href="#">UI/UX Design</a></li>
-            <li><a href="#">Consultation</a></li>
           </ul>
         </div>
 
@@ -57,9 +56,9 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="footer-title">Contact Info</h4>
           <div className="contact-info">
-            <p><i className="fas fa-envelope"></i> contact@farhan.com</p>
-            <p><i className="fas fa-phone"></i> +91 98765 43210</p>
-            <p><i className="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+            <p><i className="fas fa-envelope"></i> alamfarhan220@gmail.com</p>
+            <p><i className="fas fa-phone"></i> +91 9117436129</p>
+            <p><i className="fas fa-map-marker-alt"></i> Delhi, India</p>
           </div>
         </div>
       </div>
