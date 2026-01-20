@@ -8,6 +8,7 @@ import Testimonial from './components/Testimonial';
 import Contact from './components/Contact';
 import ThanksPage from './components/ThanksPage';
 import Footer from './components/Footer';
+import Map from './components/Map';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Project />
       <Testimonial />
       <Contact />
+      <Map/>
       <ThanksPage />
       <Footer />
     </div>
