@@ -1,26 +1,43 @@
 import React, { useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // close menu after click
+  const scrollToSection = (id) => {
+    // If NOT on home page → go to home first
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300);
+    } 
+    // If already on home → just scroll
+    else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
+
+    setIsOpen(false);
   };
 
   return (
     <div className="navbar-container">
       <nav className="navbar">
         {/* Logo */}
-        <div className="logo">
+        <div className="logo" onClick={() => navigate("/")}>
           <span>F</span>
         </div>
 
-        {/* Hamburger Button */}
+        {/* Hamburger */}
         <div
           className={`hamburger ${isOpen ? "active" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -32,28 +49,20 @@ function Navbar() {
 
         {/* Nav Links */}
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-          <li>
-            <a href="#home" onClick={(e) => { e.preventDefault(); handleScroll("home"); }}>Home</a>
-          </li>
-          <li>
-            <a href="#about" onClick={(e) => { e.preventDefault(); handleScroll("about"); }}>About Me</a>
-          </li>
-          <li>
-            <a href="#services" onClick={(e) => { e.preventDefault(); handleScroll("services"); }}>Services</a>
-          </li>
-          <li>
-            <a href="#projects" onClick={(e) => { e.preventDefault(); handleScroll("projects"); }}>Projects</a>
-          </li>
-          <li>
-            <a href="#reviews" onClick={(e) => { e.preventDefault(); handleScroll("reviews"); }}>Testimonials</a>
-          </li>
-          <li>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); handleScroll("contact"); }}>Contact</a>
-          </li>
+          <li><a onClick={() => scrollToSection("home")}>Home</a></li>
+          <li><a onClick={() => scrollToSection("about")}>About Me</a></li>
+          <li><a onClick={() => scrollToSection("services")}>Services</a></li>
+          <li><a onClick={() => scrollToSection("projects")}>Projects</a></li>
+
+          {/* New Pages */}
+          <li><Link to="/blogs" onClick={() => setIsOpen(false)}>Blogs</Link></li>
+          <li><Link to="/shop" onClick={() => setIsOpen(false)}>Shop</Link></li>
+
+          <li><a onClick={() => scrollToSection("reviews")}>Testimonials</a></li>
+          <li><a onClick={() => scrollToSection("contact")}>Contact</a></li>
         </ul>
 
-        {/* Contact Button (hidden on mobile) */}
-        <button className="contact-btn" onClick={() => handleScroll("contact")}>
+        <button className="contact-btn" onClick={() => scrollToSection("contact")}>
           Contact
         </button>
       </nav>

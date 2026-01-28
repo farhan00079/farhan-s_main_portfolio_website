@@ -1,27 +1,24 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import AboutMe from './components/AboutMe';
-import Service from './components/Service';
-import Project from './components/Project';
-import Testimonial from './components/Testimonial';
-import Contact from './components/Contact';
-import ThanksPage from './components/ThanksPage';
 import Footer from './components/Footer';
-import Map from './components/Map';
+
+import Home from './pages/home';
+import Shop from './components/Shop';
+import Blogs from './components/Blogs';
 
 const App = () => {
   return (
     <div style={{ backgroundColor: '#0f0f0f', minHeight: '100vh' }}>
       <Navbar />
-      <Hero />
-      <AboutMe />
-      <Service />
-      <Project />
-      <Testimonial />
-      <Contact />
-      <Map/>
-      <ThanksPage />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/blogs" element={<Blogs />} />
+      </Routes>
+
       <Footer />
     </div>
   );
