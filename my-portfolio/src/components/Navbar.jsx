@@ -57,9 +57,11 @@ function Navbar() {
           {/* New Pages */}
           <li><Link to="/blogs" onClick={() => setIsOpen(false)}>Blogs</Link></li>
           <li><Link to="/shop" onClick={() => setIsOpen(false)}>Shop</Link></li>
+          <li><Link to ="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li><Link to ="/map" onClick={() => setIsOpen(false)}>Map</Link></li>
 
           <li><a onClick={() => scrollToSection("reviews")}>Testimonials</a></li>
-          <li><a onClick={() => scrollToSection("contact")}>Contact</a></li>
+       
         </ul>
 
         <button className="contact-btn" onClick={() => scrollToSection("contact")}>

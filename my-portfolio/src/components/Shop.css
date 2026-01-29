@@ -26,13 +26,10 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .neon-text {
-  text-shadow: 0 0 10px var(--neon-cyan),
-               0 0 20px var(--neon-cyan),
-               0 0 30px var(--neon-cyan);
+  text-shadow: 
+    0 0 3px rgba(0, 255, 255, 0.5);
 }
-
 .neon-yellow {
   color: var(--neon-yellow);
   text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);

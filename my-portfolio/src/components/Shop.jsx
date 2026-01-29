@@ -7,8 +7,8 @@ const Shop = () => {
     {
       id: 1,
       name: "Neon Cyber T-Shirt",
-      price: 29.99,
-      originalPrice: 39.99,
+      price: 399,
+      originalPrice: 599,
       rating: 4.5,
       reviews: 128,
       description: "Futuristic cyberpunk design with glowing accents",
@@ -20,7 +20,7 @@ const Shop = () => {
     {
       id: 2,
       name: "Holographic Hoodie",
-      price: 59.99,
+      price: 499,
       rating: 4.8,
       reviews: 256,
       description: "Iridescent holographic finish with neon trim",
@@ -31,7 +31,7 @@ const Shop = () => {
     {
       id: 3,
       name: "Digital Glitch Tee",
-      price: 34.99,
+      price: 799,
       rating: 4.3,
       reviews: 89,
       description: "Glitch art design with neon color palette",
@@ -42,8 +42,8 @@ const Shop = () => {
     {
       id: 4,
       name: "Synthwave Jacket",
-      price: 89.99,
-      originalPrice: 99.99,
+      price: 699,
+      originalPrice: 999,
       rating: 4.9,
       reviews: 342,
       description: "Retro-futuristic jacket with LED lighting",
@@ -54,7 +54,7 @@ const Shop = () => {
     {
       id: 5,
       name: "Matrix Code Sweater",
-      price: 49.99,
+      price: 499,
       rating: 4.6,
       reviews: 178,
       description: "Green code pattern on black background",
@@ -64,7 +64,7 @@ const Shop = () => {
     {
       id: 6,
       name: "Neon Night Runner",
-      price: 44.99,
+      price: 899,
       rating: 4.4,
       reviews: 95,
       description: "Reflective neon stripes for night visibility",
@@ -74,7 +74,7 @@ const Shop = () => {
     {
       id: 7,
       name: "Cyberdeck Access Pack",
-      price: 24.99,
+      price: 299,
       originalPrice: 34.99,
       rating: 4.7,
       reviews: 201,
@@ -86,7 +86,7 @@ const Shop = () => {
     {
       id: 8,
       name: "Quantum Leap Cap",
-      price: 19.99,
+      price: 399,
       rating: 4.2,
       reviews: 67,
       description: "LED-embedded baseball cap",
@@ -97,8 +97,8 @@ const Shop = () => {
     {
       id: 9,
       name: "Neon Grid Pullover",
-      price: 54.99,
-      originalPrice: 64.99,
+      price: 599,
+      originalPrice: 799,
       rating: 4.7,
       reviews: 156,
       description: "Geometric grid pattern with neon highlights",
@@ -109,7 +109,7 @@ const Shop = () => {
     {
       id: 10,
       name: "Cyber Punk Vest",
-      price: 74.99,
+      price: 799,
       rating: 4.5,
       reviews: 89,
       description: "Tactical vest with utility pockets",
@@ -119,7 +119,7 @@ const Shop = () => {
     {
       id: 11,
       name: "Digital Dreams Tee",
-      price: 27.99,
+      price: 299,
       rating: 4.4,
       reviews: 112,
       description: "Abstract digital art print",
@@ -129,7 +129,7 @@ const Shop = () => {
     {
       id: 12,
       name: "Retro Wave Hoodie",
-      price: 64.99,
+      price: 699,
       originalPrice: 79.99,
       rating: 4.8,
       reviews: 234,
@@ -294,9 +294,9 @@ const Shop = () => {
 
           <div className="product-footer">
             <div className="price-container">
-              <span className="price neon-yellow">${product.price.toFixed(2)}</span>
+              <span className="price neon-yellow">₹{product.price.toFixed(2)}</span>
               {product.originalPrice && (
-                <span className="original-price">${product.originalPrice.toFixed(2)}</span>
+                <span className="original-price">₹{product.originalPrice.toFixed(2)}</span>
               )}
             </div>
 

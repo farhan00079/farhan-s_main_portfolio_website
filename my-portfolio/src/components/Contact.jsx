@@ -1,40 +1,45 @@
-import React from "react";
 import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact" id="contact">
-      <h1 className="contact-title">Contact</h1>
-
-      <div className="contact-wrapper">
-        <div className="contact-left">
-          <h2>✨ Let’s Create Something Amazing Together</h2>
+    <section className="contact-container">
+      <div className="contact-card">
+        
+        {/* Left Section */}
+        <div className="contact-info">
+          <h2>Let’s Talk 👋</h2>
           <p>
-            Got an idea or project in mind? I’d love to hear from you. Fill in the form
-            and let’s start building something impactful!
+            Have a project in mind or just want to say hi?  
+            Fill the form and I’ll get back to you.
           </p>
+
+          <div className="info-item">
+            <span>📧</span>
+            <p>contact@example.com</p>
+          </div>
+
+          <div className="info-item">
+            <span>📞</span>
+            <p>+91 98765 43210</p>
+          </div>
+
+          <div className="info-item">
+            <span>📍</span>
+            <p>India</p>
+          </div>
         </div>
 
-        <div className="contact-right">
-          <form className="contact-form">
-            <div className="input-group">
-              <label>Name</label>
-              <input type="text" placeholder="Enter your name" required />
-            </div>
+        {/* Right Section */}
+        <form className="contact-form">
+          <h3>Contact Form</h3>
 
-            <div className="input-group">
-              <label>Email</label>
-              <input type="email" placeholder="Enter your email" required />
-            </div>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="4" placeholder="Your Message" required />
 
-            <div className="input-group">
-              <label>Message</label>
-              <textarea placeholder="Enter your message" rows="5" required></textarea>
-            </div>
+          <button type="submit">Send Message</button>
+        </form>
 
-            <button type="submit" className="neon-btn">🚀 Send Message</button>
-          </form>
-        </div>
       </div>
     </section>
   );

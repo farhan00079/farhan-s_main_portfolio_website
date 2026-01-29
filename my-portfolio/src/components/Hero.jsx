@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import profileImg from '../assets/profile1.jpg'; // Make sure the image exists
+import profileImg from '../assets/profile5.jpeg'; // Make sure the image exists
 
 const Hero = () => {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import avatar from '../assets/avatar.jpg'; // Replace with your illustrated avatar
+import avatar from '../assets/profile3.jpeg'; // Replace with your illustrated avatar
 
 const About = () => {
   return (
