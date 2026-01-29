@@ -9,6 +9,7 @@ import Shop from './components/Shop';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact';
 import Map from './components/Map';
+import Chatbot from './components/Chatbot';
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/map" element={<Map />} />
       </Routes>
-
+ 
       <Footer />
+           <Chatbot />
     </div>
   );
 };

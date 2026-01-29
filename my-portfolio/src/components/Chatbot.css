@@ -1,0 +1,140 @@
+/* CHAT WINDOW */
+.chat-window {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 360px;
+  height: 480px;
+  background: #1e1e1e;
+  color: #eaeaea;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0,0,0,.6);
+  border: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* HEADER */
+.chat-header {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.chat-header .title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.ai-dot {
+  width: 10px;
+  height: 10px;
+  background: #4f9cff;
+  border-radius: 50%;
+}
+
+.close-btn {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.close-btn:hover {
+  opacity: 1;
+}
+
+/* BODY */
+.chat-body {
+  flex: 1;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.msg.bot {
+  color: #eaeaea;
+}
+
+.msg.user {
+  color: #9ecbff;
+}
+
+/* INPUT */
+.chat-input {
+  padding: 12px;
+  border-top: 1px solid #2a2a2a;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  background: #141414;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: white;
+  outline: none;
+}
+
+.chat-input input:focus {
+  border-color: #4f9cff;
+  box-shadow: 0 0 0 2px rgba(79,156,255,.3);
+}
+
+.chat-input button {
+  width: 36px;
+  border-radius: 10px;
+  background: #4f9cff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* FLOATING ICON */
+.chat-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+
+/* PLUS ICON */
+.plus-btn {
+  font-size: 22px;
+  color: #aaa;
+  cursor: pointer;
+  padding: 0 6px;
+  user-select: none;
+}
+
+.plus-btn:hover {
+  color: #4f9cff;
+}
+
+/* IMAGE PREVIEW */
+.msg img {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-top: 6px;
+  border: 1px solid #333;
+}

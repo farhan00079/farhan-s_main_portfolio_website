@@ -5,6 +5,7 @@ import Service from '../components/Service';
 import Project from '../components/Project';
 import Testimonial from '../components/Testimonial';
 import ThanksPage from '../components/ThanksPage';
+import Chatbot from '../components/Chatbot';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Project />
       <Testimonial />
       <ThanksPage />
+      <Chatbot />
     </>
   );
 };
